@@ -2,24 +2,28 @@
 @import 'https://fonts.googleapis.com/css?family=Lobster';
 
 body {
-  margin:0;
+  margin: 0;
 }
 
 header {
-	background-color: #45464E;
-	padding: 30px;
+  background-color: #45464E;
+  padding: 30px;
 }
 
-header h1, 
-header h2
- {
-	font-family: 'Lobster', cursive;
-	color: #fff;
-	text-align:center;
+header h1,
+header h2 {
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  text-align: center;
 }
 
-header h1 {	font-size: 45px; }
-header h2 {	font-size: 32px; }
+header h1 {
+  font-size: 45px;
+}
+
+header h2 {
+  font-size: 32px;
+}
 
 #mocha {
   font: 20px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -108,9 +112,9 @@ header h2 {	font-size: 32px; }
   margin-left: 5px;
   padding: 2px 5px;
   color: #fff;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
-  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.2);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .2);
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -165,8 +169,8 @@ header h2 {	font-size: 32px; }
   margin: 5px;
   padding: 15px;
   border: 1px solid #eee;
-  max-width: 85%; /*(1)*/
-  max-width: calc(100% - 42px); /*(2)*/
+  max-width: 85%;
+  /*(1)*/
   max-height: 300px;
   word-wrap: break-word;
   border-bottom-color: #ddd;
@@ -202,8 +206,8 @@ header h2 {	font-size: 32px; }
   margin: 5px;
   padding: 15px;
   border: 1px solid #eee;
-  max-width: 85%; /*(1)*/
-  max-width: calc(100% - 42px); /*(2)*/
+  max-width: 85%;
+  /*(1)*/
   word-wrap: break-word;
   border-bottom-color: #ddd;
   -webkit-border-radius: 3px;
@@ -255,6 +259,7 @@ header h2 {	font-size: 32px; }
 #mocha-report.pending .test.fail {
   display: none;
 }
+
 #mocha-report.pending .test.pass.pending {
   display: block;
 }
@@ -306,11 +311,25 @@ header h2 {	font-size: 32px; }
   height: 40px;
 }
 
-#mocha code .comment { color: #ddd; }
-#mocha code .init { color: #2f6fad; }
-#mocha code .string { color: #5890ad; }
-#mocha code .keyword { color: #8a6343; }
-#mocha code .number { color: #2f6fad; }
+#mocha code .comment {
+  color: #ddd;
+}
+
+#mocha code .init {
+  color: #2f6fad;
+}
+
+#mocha code .string {
+  color: #5890ad;
+}
+
+#mocha code .keyword {
+  color: #8a6343;
+}
+
+#mocha code .number {
+  color: #2f6fad;
+}
 
 @media screen and (max-device-width: 480px) {
   #mocha {
