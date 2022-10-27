@@ -15,14 +15,13 @@ In your web browser, looking at index.html page that is within the assignment fo
 
 Your job is to make all these JavaScript tests pass by completing their respective puzzle.
 
-1. Open the `assignment/assignment.js` file in your text editor.
+1. Open the `app.js` file in your text editor.
 1. Read the instructions for each problem.
 1. Solve the problem by writing JavaScript.
 
 Once it's ready, test your solution.
 
-1. Tab over to the browser with `Command + Tab`.
-1. Refresh the browser with `Command + R`.
+1. Refresh the browser with `Command + R` with each update you make.
 1. Scroll to the puzzle's test and see if it's still red.
 1. Once the test is green, you've solved the puzzle.
 
