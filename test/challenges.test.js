@@ -63,14 +63,14 @@ window.onload = () => {
 		})
 	})
 
-	describe('interleave', () => {
+	describe('mergeArrays', () => {
 		it("returns an empty array when the inputs are empty", () => {
-			expect(interleave([], []), "Default value is incorrect").to.deep.eq([])
+			expect(mergeArrays([], []), "Default value is incorrect").to.deep.eq([])
 		})
 
-		it("interleaves elements from two arrays when input is present", () => {
-			expect(interleave(["a", "b", "c"], ["x", "y", "z"])).to.deep.eq(["a", "x", "b", "y", "c", "z"])
-			expect(interleave([1, 2, 3, 4], [5, 6, 7, 8])).to.deep.eq([1, 5, 2, 6, 3, 7, 4, 8])
+		it("mergeArrayss elements from two arrays when input is present", () => {
+			expect(mergeArrays(["a", "b", "c"], ["x", "y", "z"])).to.deep.eq(["a", "x", "b", "y", "c", "z"])
+			expect(mergeArrays([1, 2, 3, 4], [5, 6, 7, 8])).to.deep.eq([1, 5, 2, 6, 3, 7, 4, 8])
 		})
 	})
 
