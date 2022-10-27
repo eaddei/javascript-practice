@@ -38,7 +38,7 @@ results on the index page in the browser.
 
 */
 
-const sum = (arr) => arr.reduce((acc, num) => acc + num, 0);
+
 
 /*
 
@@ -53,7 +53,7 @@ Example:
 
 */
 
-const doubleLetters = (str) => str.split('').map(letter => letter + letter).join('');
+
 
 /*
 
@@ -68,7 +68,7 @@ Example:
 
 */
 
-const doubleNumbers = (arr) => arr.map(num => num * 2);
+
 
 /*
 
@@ -85,7 +85,7 @@ Examples:
 
 */
 
-const multiplyNumbers = (arr, multiplier) => arr.map(num => num * multiplier);
+
 
 /*
 
@@ -102,13 +102,7 @@ NOTE: you can assume each input will be the same length
 
 */
 
-const mergeArrays = (arr1, arr2) => {
-  let mergedArr = [];
-  for (let i = 0; i < arr1.length; i++) {
-    mergedArr.push(arr1[i], arr2[i]);
-  }
-  return mergedArr;
-}
+
 
 /*
 
@@ -123,13 +117,7 @@ Example:
 
 */
 
-const createRange = (num, value) => {
-  let arr = [];
-  for (let i = 0; i < num; i++) {
-    arr.push(value);
-  }
-  return arr;
-}
+
 
 /*
 
@@ -144,12 +132,7 @@ Example:
 
 */
 
-const flipArray = (arr) => {
-  const mappedArr = arr.map((item, index) => {
-    return { [item]: index };
-  })
-  return Object.assign({}, ...mappedArr);
-}
+
 
 /*
 
@@ -179,13 +162,7 @@ Example:
 
 */
 
-const reverseString = (str) => {
-  let reversedStr = '';
-  for (let i = str.length - 1; i >= 0; i--) {
-    reversedStr += str[i];
-  }
-  return reversedStr;
-}
+
 
 /*
 
@@ -202,12 +179,7 @@ Examples:
 
 */
 
-const repeats = (str) => {
-  if (str.length % 2 !== 0) return false;
-  let firstHalf = str.slice(0, str.length / 2);
-  let secondHalf = str.slice(str.length / 2);
-  return firstHalf === secondHalf;
-}
+
 
 /*
 
