@@ -23,7 +23,7 @@ const test3 = () => "This Works!";
 /*
 
 ----------------------------------------
-CHALLENGE #1: Sum
+CHALLENGE #01: Sum
 ----------------------------------------
 
 Write function named sum that will take an array of numbers and return the sum of them.
@@ -38,12 +38,12 @@ results on the index page in the browser.
 
 */
 
-
+const sum = (arr) => arr.reduce((acc, num) => acc + num, 0);
 
 /*
 
 ----------------------------------------
-CHALLENGE #2: Double Letters
+CHALLENGE #02: Double Letters
 ----------------------------------------
 
 Write function named doubleLetters that will take a string and double every letter in the string
@@ -53,12 +53,12 @@ Example:
 
 */
 
-
+const doubleLetters = (str) => str.split('').map(letter => letter + letter).join('');
 
 /*
 
 ----------------------------------------
-CHALLENGE #3: Double Numbers
+CHALLENGE #03: Double Numbers
 ----------------------------------------
 
 Write function named doubleNumbers that will take an array of numbers and return an array with those numbers doubled
@@ -68,12 +68,12 @@ Example:
 
 */
 
-
+const doubleNumbers = (arr) => arr.map(num => num * 2);
 
 /*
 
 ----------------------------------------
-CHALLENGE #3: Multiply Numbers
+CHALLENGE #04: Multiply Numbers
 ----------------------------------------
 
 Write function named multiplyNumbers that will take an array of numbers and
@@ -85,12 +85,12 @@ Examples:
 
 */
 
-
+const multiplyNumbers = (arr, multiplier) => arr.map(num => num * multiplier);
 
 /*
 
 ----------------------------------------
-CHALLENGE #4: Merge Arrays
+CHALLENGE #05: Merge Arrays
 ----------------------------------------
 
 Write function named mergeArrays that will take two arrays and merges them
@@ -102,12 +102,18 @@ NOTE: you can assume each input will be the same length
 
 */
 
-
+const mergeArrays = (arr1, arr2) => {
+  let mergedArr = [];
+  for (let i = 0; i < arr1.length; i++) {
+    mergedArr.push(arr1[i], arr2[i]);
+  }
+  return mergedArr;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #06: Create Range
 ----------------------------------------
 
 Write function named createRange that will take a number and a default value and return an array of that many values
@@ -117,12 +123,18 @@ Example:
 
 */
 
-
+const createRange = (num, value) => {
+  let arr = [];
+  for (let i = 0; i < num; i++) {
+    arr.push(value);
+  }
+  return arr;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #07: Flip Array
 ----------------------------------------
 
 Write function named flipArray that will take an array and return an object where the keys are the items and the values are the indices
@@ -132,12 +144,17 @@ Example:
 
 */
 
-
+const flipArray = (arr) => {
+  const mappedArr = arr.map((item, index) => {
+    return { [item]: index };
+  })
+  return Object.assign({}, ...mappedArr);
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #08: Arrays to Object
 ----------------------------------------
 
 Write function named arraysToObject that will take an array of 2-element arrays, and return an object of key/value pairs
@@ -152,7 +169,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #09: Reverse String
 ----------------------------------------
 
 Write function named reverseString that will reverse a string without calling the built-in .split or .reverse methods
@@ -162,12 +179,18 @@ Example:
 
 */
 
-
+const reverseString = (str) => {
+  let reversedStr = '';
+  for (let i = str.length - 1; i >= 0; i--) {
+    reversedStr += str[i];
+  }
+  return reversedStr;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #10: Repeats
 ----------------------------------------
 
 Write a function named repeats that returns true if the first half of the string equals the last half, and false if not
@@ -179,12 +202,17 @@ Examples:
 
 */
 
-
+const repeats = (str) => {
+  if (str.length % 2 !== 0) return false;
+  let firstHalf = str.slice(0, str.length / 2);
+  let secondHalf = str.slice(str.length / 2);
+  return firstHalf === secondHalf;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #11: Every Other
 ----------------------------------------
 
 Write a function named everyOther that returns every other character in the string
@@ -194,12 +222,18 @@ Example:
 
 */
 
-
+const everyOther = (str) => {
+  let everyOtherStr = '';
+  for (let i = 0; i < str.length; i += 2) {
+    everyOtherStr += str[i];
+  }
+  return everyOtherStr;
+};
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #12: All Equal
 ----------------------------------------
 
 Write a function named allEqual that returns true if every character in the string is the same
@@ -215,7 +249,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #13: Sum of Letters
 ----------------------------------------
 
 Write a function named sumLetters that returns the sum of every character in the string
@@ -231,7 +265,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #14: Count Vowels
 ----------------------------------------
 
 Write a function named countVowels that returns the number of vowels in a string, excluding "y"
@@ -241,12 +275,18 @@ Example:
 
 */
 
-
+const countVowels = (str) => {
+  let count = 0;
+  for (let i = 0; i < str.length; i++) {
+    if (str[i].match(/[aeiou]/)) count++;
+  }
+  return count;
+};
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #15: Split String
 ----------------------------------------
 
 Write a function named split that takes a string and returns an array of the letters
@@ -263,7 +303,7 @@ NOTE: do not use the builtin `split` method
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #16: Get Code Points
 ----------------------------------------
 
 Write a function named getCodePoints that takes a string and returns an array of the codePoints of the letters
@@ -280,7 +320,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #17: Letter Map
 ----------------------------------------
 
 Write a function named letterMap that takes a string and returns an object of the letters and their positions in the string
@@ -296,7 +336,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #18: Count Letters
 ----------------------------------------
 
 Write a function named letterCount that takes a string and returns an object with the letters and the number of their occurrences
@@ -312,7 +352,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #19: Three Odd Numbers
 ----------------------------------------
 
 Write a function named threeOdds that takes 2 numbers and returns true if there are 3 odd numbers _between_ those two numbers
@@ -328,7 +368,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #20: Pad String Left
 ----------------------------------------
 
 Write a function called leftPad that takes a string, a length and a fill character and returns a string padded to length with the fill character
@@ -343,7 +383,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #21: Multiply String
 ----------------------------------------
 
 Write a function named createString that takes a number and a letter and creates a string of that many letters
@@ -359,7 +399,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #22: Factorial
 ----------------------------------------
 
 Write a function named factorial that takes a number and returns its factorial
@@ -372,12 +412,20 @@ Examples:
 
 */
 
-
+const factorial = (num) => {
+  if (num === 0) return 1;
+  let factorialNums = [];
+  while (num > 0) {
+    factorialNums.push(num);
+    num--;
+  }
+  return factorialNums.reduce((acc, num) => acc * num);
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #23: Between the Numbers
 ----------------------------------------
 
 Write a function named arrayOfNumbers that takes a number and returns an array of all the numbers between 1 and that number, inclusive
@@ -388,12 +436,21 @@ Examples:
 
 */
 
-
+const arrayOfNumbers = (num) => {
+  let increment = 1;
+  let numArray = [];
+  if (num === 0) return numArray;
+  while (increment <= num) {
+    numArray.push(increment);
+    increment++;
+  }
+  return numArray;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #24: Even Odd
 ----------------------------------------
 
 Write a function named evenOdd that takes a number and returns an object with the numbers and whether they are even or odd
@@ -408,7 +465,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #25: Growing Keys
 ----------------------------------------
 
 Write a function named growingKeys that takes a number and a string and returns an object where the keys are that string, repeated one more each time
@@ -423,7 +480,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #26: Every Element
 ----------------------------------------
 
 Write a function named every that takes an array and a value and returns true if every element of the array equals the value
@@ -434,12 +491,12 @@ Examples:
 
 */
 
-
+const every = (arr, val) => arr.length === arr.filter((item) => item === val).length;
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #27: Some Element
 ----------------------------------------
 
 Write a function named some that takes an array and a value and returns true if at least one element of the array equals the value
@@ -450,12 +507,12 @@ Examples:
 
 */
 
-
+const some = (arr, val) => arr.filter((item) => item === val).length > 0;
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #28: To Sentence
 ----------------------------------------
 
 Write a function named some that takes an array and returns a string with the elements joined by commas, with a trailing 'and'
@@ -471,7 +528,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #29: Acronym
 ----------------------------------------
 
 Write a function named acronym that takes an array and returns a string that is an acronym of the items in the array
@@ -482,12 +539,12 @@ Examples:
 
 */
 
-
+const acronym = (arr) => arr.map((item) => item[0]).join("");
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #30: Lowest Number
 ----------------------------------------
 
 Write a function named min that takes an array and returns minimum value of the array
@@ -497,12 +554,12 @@ Example:
 
 */
 
-
+const min = (arr) => arr.sort((a, b) => a - b)[0];
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #31: Object Indeces
 ----------------------------------------
 
 Write a function named index that takes an array of objects, and a property name, and returns an object where the keys are the specified property
@@ -517,7 +574,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #32: Invert Keys and Values
 ----------------------------------------
 
 Write a function named invert that takes an object and returns an object where the keys and values have been inverted
@@ -527,12 +584,18 @@ Example:
 
 */
 
-
+const invert = (obj) => {
+  let newObj = {};
+  for (let key in obj) {
+    newObj[obj[key]] = key;
+  }
+  return newObj;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #33: Add Signature
 ----------------------------------------
 
 Write a function named addSignature that takes an object and a name, and returns an object where
@@ -545,12 +608,18 @@ Example:
 
 */
 
-
+const addSignature = (obj, name) => {
+  let newObj = {};
+  for (let key in obj) {
+    newObj[key + "-signed"] = obj[key] + " - " + name;
+  }
+  return newObj;
+}
 
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #34: Array Key Value Pairs
 ----------------------------------------
 
 Write a function named pairs that takes an object and returns an array of strings of key/value pairs
@@ -565,7 +634,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #35: Sum Object Values
 ----------------------------------------
 
 Write a function named sumValues that takes an object and returns the sum of the values
@@ -580,7 +649,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #36: Biggest Object Name
 ----------------------------------------
 
 Write a function named biggestProperty that takes an object and returns the name of the property with the highest value
@@ -595,7 +664,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #37: Key for Value
 ----------------------------------------
 
 Write a function named keyForValue that takes an object and a value and returns the name of the property that matches that value
@@ -610,7 +679,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #38: Object Contains Value
 ----------------------------------------
 
 Write a function named containsValue that takes an object and a value and returns true if the object contains the value

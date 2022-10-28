@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <title>JavaScript Practice</title>
 
+    <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="vendor/mocha.css" />
     <script src="vendor/mocha.js"></script>
     <script src="vendor/chai.js"></script>
@@ -16,6 +17,17 @@
     <header>
       <h1 class="center">JavaScript Practice</h1>
     </header>
+    <div class="test-container">
+      <div class="failing-tests">
+        <h2>Failing Tests</h2>
+        <div id="failing"></div>
+      </div>
+      <div class="test-divider"></div>
+      <div class="passing-tests">
+        <h2>Passing Tests</h2>
+        <div id="passing"></div>
+      </div>
+    </div>
     <div id="mocha"></div>
   </body>
 </html>

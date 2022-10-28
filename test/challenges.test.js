@@ -2,21 +2,21 @@ window.onload = () => {
 	var expect = chai.expect;
 	mocha.setup('bdd');
 
-	describe('sample challenge with 3 acceptable solutions', () => {
-		it('first sample function `test1()` returns `This Works!`', () => {
+	describe('Sample with 3 acceptable solutions', () => {
+		it('first sample function returns `This Works!`', () => {
 			expect(test1()).to.eq("This Works!")
 		});
 
-		it('second sample function `test2()` returns `This Works!`', () => {
+		it('second sample function returns `This Works!`', () => {
 			expect(test2()).to.eq("This Works!")
 		});
 
-		it('third sample function `test3()` returns `This Works!`', () => {
+		it('third sample function returns `This Works!`', () => {
 			expect(test3()).to.eq("This Works!")
 		});
 	});
 
-	describe('sum', () => {
+	describe('#01: Sum', () => {
 		it("returns 0 if the input is empty", () => {
 			expect(sum([]), "Default value is incorrect").to.eq(0)
 		})
@@ -30,7 +30,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('doubleLetters', () => {
+	describe('#02: Double Letters', () => {
 		it("returns an empty string when the input is empty", () => {
 			expect(doubleLetters(""), "Default value is incorrect").to.eq("")
 		})
@@ -41,7 +41,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('doubleNumbers', () => {
+	describe('#03: Double Numbers', () => {
 		it("returns an empty array when the input is empty", () => {
 			expect(doubleNumbers([]), "Default value is incorrect").to.deep.eq([])
 		})
@@ -52,7 +52,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('multiplyNumbers', () => {
+	describe('#04: Multiply Numbers', () => {
 		it("returns 0 when the input is empty", () => {
 			expect(multiplyNumbers([], 3), "Default value is incorrect").to.deep.eq([])
 		})
@@ -63,7 +63,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('mergeArrays', () => {
+	describe('#05: Merge Arrays', () => {
 		it("returns an empty array when the inputs are empty", () => {
 			expect(mergeArrays([], []), "Default value is incorrect").to.deep.eq([])
 		})
@@ -74,7 +74,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('createRange', () => {
+	describe('#06: Create Range', () => {
 		it("returns an empty array when the input is empty", () => {
 			expect(createRange(0), "Default value is incorrect").to.deep.eq([])
 		})
@@ -85,7 +85,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('flipArray', () => {
+	describe('#07: Flip Array', () => {
 		it("returns an empty object when the input is empty", () => {
 			expect(flipArray([]), "Default value is incorrect").to.deep.eq({})
 		})
@@ -96,7 +96,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('arraysToObject', () => {
+	describe('#08: Arrays to Object', () => {
 		it("returns an empty object when the input is empty", () => {
 			expect(arraysToObject([]), "Default value is incorrect").to.deep.eq({})
 		})
@@ -107,7 +107,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('reverseString', () => {
+	describe('#09: Reverse String', () => {
 		it("returns an empty string when the input is empty", () => {
 			expect(reverseString(""), "Default value is incorrect").to.deep.eq("")
 		})
@@ -122,7 +122,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('repeats', () => {
+	describe('#10: Repeats', () => {
 		it("returns true when given an empty string (which seems strange, but go with it :)", () => {
 			expect(repeats(""), "Default value is incorrect").to.deep.eq(true)
 		})
@@ -142,7 +142,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('everyOther', () => {
+	describe('#11: Every Other', () => {
 		it("returns an empty string when given an empty string", () => {
 			expect(everyOther(""), "Default value is incorrect").to.deep.eq("")
 		})
@@ -158,7 +158,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('allEqual', () => {
+	describe('#12: All Equal', () => {
 		it("returns true when given an empty string", () => {
 			expect(allEqual(""), "Default value is incorrect").to.deep.eq(true)
 		})
@@ -179,7 +179,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('sumLetters', () => {
+	describe('#13: Sum of Letters', () => {
 		it("returns 0 when given an empty string", () => {
 			expect(sumLetters(""), "Default value is incorrect").to.deep.eq(0)
 		})
@@ -190,7 +190,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('countVowels', () => {
+	describe('#14: Count Vowels', () => {
 		it("returns 0 when given an empty string", () => {
 			expect(countVowels(""), "Default value is incorrect").to.deep.eq(0)
 		})
@@ -201,7 +201,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('split', () => {
+	describe('#15: Split String', () => {
 		it("returns an empty array when given an empty string", () => {
 			expect(split(""), "Default value is incorrect").to.deep.eq([])
 		})
@@ -216,7 +216,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('getCodePoints', () => {
+	describe('#16: Get Code Points', () => {
 		it("returns an empty array when given an empty string", () => {
 			expect(getCodePoints(""), "Default value is incorrect").to.deep.eq([])
 		})
@@ -227,7 +227,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('letterMap', () => {
+	describe('#17: Letter Map', () => {
 		it("returns an empty object when given an empty string", () => {
 			expect(letterMap(""), "Default value is incorrect").to.deep.eq({})
 		})
@@ -239,7 +239,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('letterCount', () => {
+	describe('#18: Count Letters', () => {
 		it("returns an empty object when given an empty string", () => {
 			expect(letterCount(""), "Default value is incorrect").to.deep.eq({})
 		})
@@ -251,7 +251,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('threeOdds', () => {
+	describe('#19: Three Odd Numbers', () => {
 		it("returns false when passed 0s", () => {
 			expect(threeOdds(0, 0), "Default value is incorrect").to.deep.eq(false)
 		})
@@ -270,7 +270,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('leftPad', () => {
+	describe('#20: Pad String Left', () => {
 		it("returns the original string when it's longer than the padding", () => {
 			expect(leftPad("Hello", 0, "-")).to.deep.eq("Hello")
 			expect(leftPad("Hello", 1, "-")).to.deep.eq("Hello")
@@ -289,7 +289,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('createString', () => {
+	describe('#21: Multiply String', () => {
 		it("returns an empty string when given 0 or a negative number", () => {
 			expect(createString(0, "r")).to.deep.eq("")
 			expect(createString(-1, "r")).to.deep.eq("")
@@ -301,7 +301,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('factorial', () => {
+	describe('#22: Factorial', () => {
 		it("returns 1 when given 0", () => {
 			expect(factorial(0)).to.deep.eq(1)
 		})
@@ -316,7 +316,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('arrayOfNumbers', () => {
+	describe('#23: Between the Numbers', () => {
 		it("returns an empty array when passed 0", () => {
 			expect(arrayOfNumbers(0)).to.deep.eq([])
 		})
@@ -331,7 +331,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('evenOdd', () => {
+	describe('#24: Even Odd', () => {
 		it("returns an empty object when passed 0s", () => {
 			expect(evenOdd(0, 0)).to.deep.eq({})
 		})
@@ -342,7 +342,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('growingKeys', () => {
+	describe('#25: Growing Keys', () => {
 		it("returns an empty object when passed 0", () => {
 			expect(growingKeys(0, "a")).to.deep.eq({})
 		})
@@ -354,7 +354,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('every', () => {
+	describe('#26: Every Element', () => {
 		it("returns true when passed an empty array", () => {
 			expect(every([], "a")).to.deep.eq(true)
 		})
@@ -374,7 +374,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('some', () => {
+	describe('#27: Some Element', () => {
 		it("returns false when passed an empty array", () => {
 			expect(some([], "a")).to.deep.eq(false)
 		})
@@ -394,7 +394,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('toSentence', () => {
+	describe('#28: To Sentence', () => {
 		it("returns an empty string when passed an empty array", () => {
 			expect(toSentence([])).to.deep.eq("")
 		})
@@ -410,7 +410,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('acronym', () => {
+	describe('#29: Acronym', () => {
 		it("returns an empty string when passed an empty array", () => {
 			expect(acronym([])).to.deep.eq("")
 		})
@@ -421,7 +421,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('min', () => {
+	describe('#30: Lowest Number', () => {
 		it("returns undefined when passed an empty array", () => {
 			expect(min([])).to.deep.eq(undefined)
 		})
@@ -438,7 +438,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('index', () => {
+	describe('#31: Object Indeces', () => {
 		it("returns an empty object when passed an empty array", () => {
 			expect(index([], 'id')).to.deep.eq({})
 		})
@@ -456,7 +456,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('invert', () => {
+	describe('#32: Invert Keys and Values', () => {
 		it("returns an empty object when passed an empty object", () => {
 			expect(invert({})).to.deep.eq({})
 		})
@@ -471,7 +471,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('addSignature', () => {
+	describe('#33: Add Signature', () => {
 		it("returns an empty object when passed an empty object", () => {
 			expect(addSignature({})).to.deep.eq({})
 		})
@@ -484,7 +484,7 @@ window.onload = () => {
 				"Contract-signed": "blah blah - Joe"
 			}
 
-			expect(addSignature("Joe", input)).to.deep.eq(expected)
+			expect(addSignature(input, "Joe")).to.deep.eq(expected)
 
 			input = {
 				"Agreement": "something",
@@ -495,11 +495,11 @@ window.onload = () => {
 				"Code of Conduct-signed": "blah blah - Beth"
 			}
 
-			expect(addSignature("Beth", input)).to.deep.eq(expected)
+			expect(addSignature(input, "Beth")).to.deep.eq(expected)
 		})
 	})
 
-	describe('pairs', () => {
+	describe('#34: Array Key Value Pairs', () => {
 		it("returns an empty array when passed an empty object", () => {
 			expect(pairs({})).to.deep.eq([])
 		})
@@ -510,7 +510,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('sumValues', () => {
+	describe('#35: Sum Object Values', () => {
 		it("returns 0 when passed an empty object", () => {
 			expect(sumValues({})).to.deep.eq(0)
 		})
@@ -525,7 +525,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('biggestProperty', () => {
+	describe('#36: Biggest Object Name', () => {
 		it("returns undefined when passed an empty object", () => {
 			expect(biggestProperty({})).to.deep.eq(undefined)
 		})
@@ -540,7 +540,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('keyForValue', () => {
+	describe('#37: Key for Value', () => {
 		it("returns undefined when passed an empty object", () => {
 			expect(keyForValue({}, 12)).to.deep.eq(undefined)
 		})
@@ -551,7 +551,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('containsValue', () => {
+	describe('#38: Object Contains Value', () => {
 		it("returns false when passed an empty object", () => {
 			expect(containsValue({}, 2)).to.deep.eq(false)
 		})
