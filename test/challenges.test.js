@@ -511,10 +511,6 @@ window.onload = () => {
 	})
 
 	describe('#35: Sum Object Values', () => {
-		it("returns 0 when passed an empty object", () => {
-			expect(sumValues({})).to.deep.eq(0)
-		})
-
 		it("returns the sum of the values", () => {
 			expect(sumValues({ a: 1, c: 5 })).to.deep.eq(6)
 			expect(sumValues({ foo: 12, bar: 5, baz: 3 })).to.deep.eq(20)

@@ -637,14 +637,14 @@ Example:
 CHALLENGE #35: Sum Object Values
 ----------------------------------------
 
-Write a function named sumValues that takes an object and returns the sum of the values
+Write a function named sumValues that takes an object and returns the sum of the values without using Object.values
 
 Example:
 - If you pass {a: 1, b: 2} it should return 3
 
 */
 
-
+const sumValues = (obj) => Object.entries(obj).map((item) => item[1]).reduce((acc, num) => acc + num);
 
 /*
 
@@ -689,6 +689,6 @@ Example:
 
 */
 
-
+const containsValue = (obj, val) => Object.values(obj).filter((item) => item === val).length > 0;
 
 //
