@@ -239,7 +239,7 @@ window.onload = () => {
 		})
 	})
 
-	describe('#18: Count Letters', () => {
+	describe('#18: Letter Count', () => {
 		it("returns an empty object when given an empty string", () => {
 			expect(letterCount(""), "Default value is incorrect").to.deep.eq({})
 		})

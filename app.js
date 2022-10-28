@@ -244,7 +244,7 @@ Examples:
 
 */
 
-
+const allEqual = (str) => str.split('').every(letter => letter === str[0]);
 
 /*
 
@@ -260,7 +260,7 @@ Examples:
 
 */
 
-
+const sumLetters = (str) => str.split('').reduce((acc, num) => acc + parseInt(num), 0);
 
 /*
 
@@ -336,7 +336,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE #18: Count Letters
+CHALLENGE #18: Letter Count
 ----------------------------------------
 
 Write a function named letterCount that takes a string and returns an object with the letters and the number of their occurrences
