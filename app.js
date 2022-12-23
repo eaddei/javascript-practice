@@ -3,30 +3,30 @@
 EXAMPLE CHALLENGE
 ----------------------------------------
 
-Challenge: Write function that returns the string, "This Works!".
+Challenge: Write a function that returns the string, "This Works!".
 
-Solution Example 1:
+Example Solution 1:
 */
 function test1() {
-  return "This Works!";
+	return "This Works!";
 }
 /*
-Solution Example 2:
+Example Solution 2:
 */
 const test2 = () => {
-  return "This Works!";
+	return "This Works!";
 }
 /*
-Solution Example 3:
+Example Solution 3:
 */
 const test3 = () => "This Works!";
 /*
 
 ----------------------------------------
-CHALLENGE #1: Sum
+CHALLENGE #01: Sum
 ----------------------------------------
 
-Write function named sum that will take an array of numbers and return the sum of them.
+Write a function named sum that will take an array of numbers and return the sum of them.
 
 Example:
 - If you pass it [1,2,3] then it should return 6 (which is 1 + 2 + 3)
@@ -43,10 +43,10 @@ results on the index page in the browser.
 /*
 
 ----------------------------------------
-CHALLENGE #2: Double Letters
+CHALLENGE #02: Double Letters
 ----------------------------------------
 
-Write function named doubleLetters that will take a string and double every letter in the string
+Write a function named doubleLetters that will take a string and double every letter in the string
 
 Example:
 - If you pass it "abc" then it should return "aabbcc"
@@ -58,10 +58,10 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE #3: Double Numbers
+CHALLENGE #03: Double Numbers
 ----------------------------------------
 
-Write function named doubleNumbers that will take an array of numbers and return an array with those numbers doubled
+Write a function named doubleNumbers that will take an array of numbers and return an array with those numbers doubled
 
 Example:
 - If you pass it [1,2,3] then it should return [2,4,6]
@@ -73,10 +73,10 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE #3: Multiply Numbers
+CHALLENGE #04: Multiply Numbers
 ----------------------------------------
 
-Write function named multiplyNumbers that will take an array of numbers and
+Write a function named multiplyNumbers that will take an array of numbers and
 return an array with those numbers multiplied by another value
 
 Examples:
@@ -90,10 +90,10 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE #4: Merge Arrays
+CHALLENGE #05: Merge Arrays
 ----------------------------------------
 
-Write function named mergeArrays that will take two arrays and merges them
+Write a function named mergeArrays that will take two arrays and merges them
 
 Example:
 - If you pass it ["a", "b", "c"] and ["d", "e", "f"] then it should return ["a", "d", "b", "e", "c", "f"]
@@ -107,10 +107,10 @@ NOTE: you can assume each input will be the same length
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #06: Create Range
 ----------------------------------------
 
-Write function named createRange that will take a number and a default value and return an array of that many values
+Write a function named createRange that will take a number and a default value and return an array of that many values
 
 Example:
 - If you pass it 4 and "Hello" then it should return ["Hello", "Hello", "Hello", "Hello"]
@@ -122,10 +122,10 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #07: Flip Array
 ----------------------------------------
 
-Write function named flipArray that will take an array and return an object where the keys are the items and the values are the indices
+Write a function named flipArray that will take an array and return an object where the keys are the items and the values are the indices
 
 Example:
 - If you pass it ["quick", "brown", "fox"] then it should return { "quick": 0, "brown": 1, "fox": 2 }
@@ -137,10 +137,10 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #08: Arrays to Object
 ----------------------------------------
 
-Write function named arraysToObject that will take an array of 2-element arrays, and return an object of key/value pairs
+Write a function named arraysToObject that will take an array of 2-element arrays, and return an object of key/value pairs
 
 Example:
 - If you pass it [[2014, "Horse"], [2015, "Sheep"]] then it should return { 2014: "Horse", 2015: "Sheep" }
@@ -152,10 +152,10 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #09: Reverse String
 ----------------------------------------
 
-Write function named reverseString that will reverse a string without calling the built-in .split or .reverse methods
+Write a function named reverseString that will reverse a string without calling the built-in .split or .reverse methods
 
 Example:
 - If you pass it "hello" then it should return "olleh"
@@ -167,7 +167,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #10: Repeats
 ----------------------------------------
 
 Write a function named repeats that returns true if the first half of the string equals the last half, and false if not
@@ -184,7 +184,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #11: Every Other
 ----------------------------------------
 
 Write a function named everyOther that returns every other character in the string
@@ -199,7 +199,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #12: All Equal
 ----------------------------------------
 
 Write a function named allEqual that returns true if every character in the string is the same
@@ -215,7 +215,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #13: Sum of Letters
 ----------------------------------------
 
 Write a function named sumLetters that returns the sum of every character in the string
@@ -231,7 +231,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #14: Count Vowels
 ----------------------------------------
 
 Write a function named countVowels that returns the number of vowels in a string, excluding "y"
@@ -246,7 +246,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #15: Split String
 ----------------------------------------
 
 Write a function named split that takes a string and returns an array of the letters
@@ -263,24 +263,7 @@ NOTE: do not use the builtin `split` method
 /*
 
 ----------------------------------------
-CHALLENGE
-----------------------------------------
-
-Write a function named getCodePoints that takes a string and returns an array of the codePoints of the letters
-
-See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/codePointAt
-
-Example:
-- If you pass "Hello" it should return [ 72, 101, 108, 108, 111 ]
-
-*/
-
-
-
-/*
-
-----------------------------------------
-CHALLENGE
+CHALLENGE #16: Letter Map
 ----------------------------------------
 
 Write a function named letterMap that takes a string and returns an object of the letters and their positions in the string
@@ -296,7 +279,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #17: Letter Count
 ----------------------------------------
 
 Write a function named letterCount that takes a string and returns an object with the letters and the number of their occurrences
@@ -312,7 +295,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #18: Three Odd Numbers
 ----------------------------------------
 
 Write a function named threeOdds that takes 2 numbers and returns true if there are 3 odd numbers _between_ those two numbers
@@ -328,7 +311,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #19: Pad String Left
 ----------------------------------------
 
 Write a function called leftPad that takes a string, a length and a fill character and returns a string padded to length with the fill character
@@ -343,14 +326,14 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #20: Multiply String
 ----------------------------------------
 
-Write a function named createString that takes a number and a letter and creates a string of that many letters
+Write a function named multiplyString that takes a number and a letter and creates a string of that many letters
 
 Examples:
-- If you pass "a", 3 it should return "aaa"
-- If you pass "b", 3 it should return "bb"
+- If you pass 3, "a" it should return "aaa"
+- If you pass 2, "b" it should return "bb"
 
 */
 
@@ -359,7 +342,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #21: Factorial
 ----------------------------------------
 
 Write a function named factorial that takes a number and returns its factorial
@@ -377,7 +360,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #22: Between the Numbers
 ----------------------------------------
 
 Write a function named arrayOfNumbers that takes a number and returns an array of all the numbers between 1 and that number, inclusive
@@ -393,13 +376,13 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #23: Even Odd
 ----------------------------------------
 
-Write a function named evenOdd that takes a number and returns an object with the numbers and whether they are even or odd
+Write a function named evenOdd that takes two numbers as a range and returns an object with the numbers and whether they are even or odd
 
 Example:
-- If you pass 1,4 it should return {"1": "odd", "2": "even", "3": "odd", "4": "even"}
+- If you pass 1, 4 it should return {"1": "odd", "2": "even", "3": "odd", "4": "even"}
 
 */
 
@@ -408,7 +391,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #24: Growing Keys
 ----------------------------------------
 
 Write a function named growingKeys that takes a number and a string and returns an object where the keys are that string, repeated one more each time
@@ -423,7 +406,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #25: Every Element
 ----------------------------------------
 
 Write a function named every that takes an array and a value and returns true if every element of the array equals the value
@@ -439,7 +422,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #26: Some Element
 ----------------------------------------
 
 Write a function named some that takes an array and a value and returns true if at least one element of the array equals the value
@@ -455,7 +438,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #27: To Sentence
 ----------------------------------------
 
 Write a function named some that takes an array and returns a string with the elements joined by commas, with a trailing 'and'
@@ -471,7 +454,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #28: Acronym
 ----------------------------------------
 
 Write a function named acronym that takes an array and returns a string that is an acronym of the items in the array
@@ -487,7 +470,7 @@ Examples:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #29: Lowest Number
 ----------------------------------------
 
 Write a function named min that takes an array and returns minimum value of the array
@@ -502,7 +485,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #30: Object Indeces
 ----------------------------------------
 
 Write a function named index that takes an array of objects, and a property name, and returns an object where the keys are the specified property
@@ -517,7 +500,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #31: Invert Keys and Values
 ----------------------------------------
 
 Write a function named invert that takes an object and returns an object where the keys and values have been inverted
@@ -532,7 +515,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #32: Add Signature
 ----------------------------------------
 
 Write a function named addSignature that takes an object and a name, and returns an object where
@@ -550,7 +533,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #33: Array Key Value Pairs
 ----------------------------------------
 
 Write a function named pairs that takes an object and returns an array of strings of key/value pairs
@@ -565,10 +548,10 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #34: Sum Object Values
 ----------------------------------------
 
-Write a function named sumValues that takes an object and returns the sum of the values
+Write a function named sumValues that takes an object and returns the sum of the values without using Object.values
 
 Example:
 - If you pass {a: 1, b: 2} it should return 3
@@ -580,7 +563,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #35: Biggest Object Name
 ----------------------------------------
 
 Write a function named biggestProperty that takes an object and returns the name of the property with the highest value
@@ -595,7 +578,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #36: Key for Value
 ----------------------------------------
 
 Write a function named keyForValue that takes an object and a value and returns the name of the property that matches that value
@@ -610,7 +593,7 @@ Example:
 /*
 
 ----------------------------------------
-CHALLENGE
+CHALLENGE #37: Object Contains Value
 ----------------------------------------
 
 Write a function named containsValue that takes an object and a value and returns true if the object contains the value
