@@ -14,7 +14,8 @@ function test1() {
 /*
 Example Solution 2:
 */
-const test2 = () => {
+// export const -- can be access anywhere in this file
+export const test2 = () => {
 	const answer = "This Works!";
 	return answer;
 }
