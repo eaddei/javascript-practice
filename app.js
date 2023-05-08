@@ -17,7 +17,6 @@ Example Solution 2:
 const test2 = () => {
 	const answer = "This Works!";
 	return answer;
-	// return "This Works!";
 }
 /*
 Example Solution 3:
