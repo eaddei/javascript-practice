@@ -7,6 +7,7 @@ Challenge: Write a function that returns the string, "This Works!".
 
 Example Solution 1:
 */
+// Original way or old way
 function test1() {
 	return "This Works!";
 }
@@ -14,12 +15,14 @@ function test1() {
 Example Solution 2:
 */
 const test2 = () => {
-	return "This Works!";
+	const answer = "This Works!";
+	return answer;
+	// return "This Works!";
 }
 /*
 Example Solution 3:
 */
-const test3 = () => "This Works!";
+const test3 = () => "This Works!"; // without the block quote the "=>" acts as the "return"
 /*
 
 ----------------------------------------
