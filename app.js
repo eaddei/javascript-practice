@@ -42,7 +42,7 @@ results on the index page in the browser.
 */
 function sum(num) {
 	let total = 0;
-	for (let index = 0; index < total.length; index++) {
+	for (let index = 0; index < num.length; index++) {
 		total += num[index];	
 	}
 	return total;
@@ -64,11 +64,14 @@ Example:
 
 */
 function doubleLetters(str) {
-	let doubleStr = "";
-	for (let index = 0; index < str.length; index++) {
-		doubleStr += str[index];
+	let doubleStr = [];
+	for (let i = 0; i < str.length; i++) {
+		doubleStr.push(str[i]);
+		doubleStr.push(str[i]);
 	}
-	return doubleStr;
+	doubleStr.join();
+	console.log("double string: ", doubleStr);
+	return doubleStr.join("");
 }
 
 const strChar = "abc";
