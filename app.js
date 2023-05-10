@@ -15,7 +15,7 @@ function test1() {
 Example Solution 2:
 */
 // export const -- can be access anywhere in this file
-export const test2 = () => {
+const test2 = () => {
 	const answer = "This Works!";
 	return answer;
 }
@@ -40,8 +40,16 @@ For example, the tests require that to complete this challenge, your function mu
 results on the index page in the browser.
 
 */
-
-
+function sum(num) {
+	let total = 0;
+	for (let index = 0; index < total.length; index++) {
+		total += num[index];	
+	}
+	return total;
+}
+const num = [1, 2, 3];
+const displaySol = sum(num);
+console.log(displaySol);
 
 /*
 
@@ -55,8 +63,17 @@ Example:
 - If you pass it "abc" then it should return "aabbcc"
 
 */
+function doubleLetters(str) {
+	let doubleStr = "";
+	for (let index = 0; index < str.length; index++) {
+		doubleStr += str[index];
+	}
+	return doubleStr;
+}
 
-
+const strChar = "abc";
+const sol = doubleLetters(strChar);
+console.log(sol);
 
 /*
 
@@ -70,7 +87,14 @@ Example:
 - If you pass it [1,2,3] then it should return [2,4,6]
 
 */
-
+function doubleNumbers(numbers) {
+	return numbers.map(function(num) {
+	  return num * 2;
+	});
+  }
+const numbers = [1, 2, 3];
+const solution = doubleNumbers(numbers);
+console.log(solution); 
 
 
 /*
@@ -87,8 +111,18 @@ Examples:
 - If you call multiplyNumbers([1,2,3], 5) you'd get [5,10,15]
 
 */
+function multiplyNumbers(numbers, numMultiplying) {
+	const arr = [];
+	for (let i = 0; i < numbers.length; i++) {
+		arr[i] = numbers[i] * numMultiplying;
+	}
+	return arr;
+}
 
-
+// const numbers = [1, 2, 3];
+// const numMultiplying = 5;
+// const sol = numMultiplying(numbers, numMultiplying);
+// console.log(sol);
 
 /*
 
