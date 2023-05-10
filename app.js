@@ -73,7 +73,7 @@ function doubleLetters(str) {
 
 const strChar = "abc";
 const sol = doubleLetters(strChar);
-console.log(sol);
+console.log(sol); // displays the result
 
 /*
 
