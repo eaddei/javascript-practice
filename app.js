@@ -195,8 +195,31 @@ Example:
 - If you pass it ["quick", "brown", "fox"] then it should return { "quick": 0, "brown": 1, "fox": 2 }
 
 */
-
-
+function flipArray(arr) {
+	const object = {};
+  
+	for (let i = 0; i < arr.length; i++) {
+	  const item = arr[i];
+	  object[item] = i;
+	}
+  
+	return object;
+  }
+  const arr = ["quick", "brown", "fox"];
+  const object = flipArray(arr);
+  console.log(object);
+ 
+  
+// function flipArray(arr) {
+// 	const flippedObj = {};
+// 	arr.forEach((item, index) => {
+// 	  flippedObj[item] = index;
+// 	});
+// 	return flippedObj;
+//   }
+// const arr = ["quick", "brown", "fox"];
+// const flippedObj = flipArray(arr);
+// console.log(flippedObject);
 
 /*
 
