@@ -177,34 +177,11 @@ Example:
 
 */
 function createRange(number, defaultValue) {
-	if (typeof number !== 'number' || number <= 0 || !Number.isInteger(number)) {
-	  throw new Error('Number should be a positive integer');
-	}
-  
-	return Array.from({ length: number }, () => defaultValue);
+	return Array(number).fill(defaultValue);
   }
   
-  // Example usage:
   const result = createRange(4, 'Hello');
-  console.log(result);  // Output: ["Hello", "Hello", "Hello", "Hello"]
-  
-
-// function createRange(number, defaultValue) {
-// 	if (typeof number !== 'number' || number <= 0 || !Number.isInteger(number)) {
-// 	  throw new Error('Number should be a positive integer');
-// 	}
-  
-// 	const range = [];
-// 	for (let i = 0; i < number; i++) {
-// 	  range.push(defaultValue);
-// 	}
-  
-// 	return range;
-//   }
-  
-//   // Example usage:
-//   const result = createRange(4, 'Hello');
-//   console.log(result); 
+  console.log(result);  
   
 /*
 
