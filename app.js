@@ -65,6 +65,7 @@ Example:
 */
 function doubleLetters(str) {
 	let doubleStr = [];
+	// Works if you don't need an index 
 	for (let letter of str) {
 		doubleStr.push(letter);
 		doubleStr.push(letter);
