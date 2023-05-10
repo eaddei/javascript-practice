@@ -65,9 +65,9 @@ Example:
 */
 function doubleLetters(str) {
 	let doubleStr = [];
-	for (let i = 0; i < str.length; i++) {
-		doubleStr.push(str[i]);
-		doubleStr.push(str[i]);
+	for (let letter of str) {
+		doubleStr.push(letter);
+		doubleStr.push(letter);
 	}
 	doubleStr.join();
 	console.log("double string: ", doubleStr);
