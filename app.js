@@ -143,20 +143,6 @@ NOTE: you can assume each input will be the same length
 
 */
 
-
-
-/*
-
-----------------------------------------
-CHALLENGE #06: Create Range
-----------------------------------------
-
-Write a function named createRange that will take a number and a default value and return an array of that many values
-
-Example:
-- If you pass it 4 and "Hello" then it should return ["Hello", "Hello", "Hello", "Hello"]
-
-*/
 function mergeArrays(arr1, arr2) {
 	const mergedArray = [];
 	const maxLen = Math.max(arr1.length, arr2.length);
@@ -177,6 +163,20 @@ const arr2 = ["d", "e", "f"];
 
 const merged = mergeArrays(arr1, arr2);
 console.log(merged);
+
+/*
+
+----------------------------------------
+CHALLENGE #06: Create Range
+----------------------------------------
+
+Write a function named createRange that will take a number and a default value and return an array of that many values
+
+Example:
+- If you pass it 4 and "Hello" then it should return ["Hello", "Hello", "Hello", "Hello"]
+
+*/
+
 /*
 
 ----------------------------------------
