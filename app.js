@@ -157,7 +157,26 @@ Example:
 - If you pass it 4 and "Hello" then it should return ["Hello", "Hello", "Hello", "Hello"]
 
 */
+function mergeArrays(arr1, arr2) {
+	const mergedArray = [];
+	const maxLen = Math.max(arr1.length, arr2.length);
+  
+	for (let i = 0; i < maxLen; i++) {
+	  if (i < arr1.length) {
+		mergedArray.push(arr1[i]);
+	  }
+	  if (i < arr2.length) {
+		mergedArray.push(arr2[i]);
+	  }
+	}
+  
+	return mergedArray;
+  }
+const arr1 = ["a", "b", "c"];
+const arr2 = ["d", "e", "f"];
 
+const merged = mergeArrays(arr1, arr2);
+console.log(merged);
 
 
 /*
