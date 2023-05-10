@@ -177,7 +177,6 @@ const arr2 = ["d", "e", "f"];
 
 const merged = mergeArrays(arr1, arr2);
 console.log(merged); 
-
 /*
 
 ----------------------------------------
