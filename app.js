@@ -211,17 +211,17 @@ function flipArray(arr) {
 
  
   
-// function flipArray(arr) {
-// 	const flippedObj = {};
-// 	arr.forEach((item, index) => {
-// 	  flippedObj[item] = index;
-// 	});
-// 	return flippedObj;
-//   }
-// const arr = ["quick", "brown", "fox"];
-// const flippedObj = flipArray(arr);
-// console.log(flippedObject);
-
+  // function flipArray(arr) {
+  // 	const flippedObj = {};
+  // 	arr.forEach((item, index) => {
+  // 	  flippedObj[item] = index;
+  // 	});
+  // 	return flippedObj;
+  //   }
+  // const arr = ["quick", "brown", "fox"];
+  // const flippedObj = flipArray(arr);
+  // console.log(flippedObject);
+  
 /*
 
 ----------------------------------------
