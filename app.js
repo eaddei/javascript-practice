@@ -1,6 +1,7 @@
 /*
 ----------------------------------------
 EXAMPLE CHALLENGE
+EXAMPLE CHALLENGE // will be deleted later
 ----------------------------------------
 
 Challenge: Write a function that returns the string, "This Works!".
