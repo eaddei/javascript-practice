@@ -234,8 +234,24 @@ Example:
 - If you pass it [[2014, "Horse"], [2015, "Sheep"]] then it should return { 2014: "Horse", 2015: "Sheep" }
 
 */
-
-
+function arraysToObject(arr) {
+	let obj = {};
+	
+	for (let i = 0; i < arr.length; i++) {
+	  let key = arr[i][0];
+	  let value = arr[i][1];
+	  
+	  obj[key] = value;
+	}
+	
+	return obj;
+  }
+  
+  let inputArray = [[2014, "Horse"], [2015, "Sheep"]];
+  let resultObj = arraysToObject(inputArray);
+  
+  console.log(resultObj);
+  
 
 /*
 
@@ -249,8 +265,21 @@ Example:
 - If you pass it "hello" then it should return "olleh"
 
 */
-
-
+function reverseString(str) {
+	var reversed = '';
+	
+	for (let i = str.length - 1; i >= 0; i--) {
+	  reversed += str.charAt(i);
+	}
+	
+	return reversed;
+  }
+  
+  let inputString = "hello";
+  let reversedString = reverseString(inputString);
+  
+  console.log(reversedString);
+  
 
 /*
 
@@ -266,8 +295,23 @@ Examples:
 - If you pass it "heehaw" then it should return false because "hee" doesn't equal "haw"
 
 */
-
-
+function repeats(str) {
+	let length = str.length;
+	
+	if (length % 2 !== 0) {
+	  return false;
+	}
+	
+	let firstHalf = str.slice(0, length / 2);
+	let secondHalf = str.slice(length / 2);
+	
+	return firstHalf === secondHalf;
+  }
+  
+  console.log(repeats("haha"));   
+  console.log(repeats("yay"));     
+  console.log(repeats("heehaw"));  
+  
 
 /*
 
@@ -281,8 +325,23 @@ Example:
 - If you pass it "abcdef" then it should return "ace" because those represent every other letter
 
 */
+function everyOther(str) {
+	let result = '';
+	
+	for (let i = 0; i < str.length; i += 2) {
+	  result += str.charAt(i);
+	}
+	
+	return result;
+  }
 
-
+  
+  
+// let inputString = "abcdef";
+// let outputString = everyOther(inputString);
+  
+// console.log(outputString);
+  
 
 /*
 
