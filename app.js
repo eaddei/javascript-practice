@@ -357,19 +357,25 @@ Examples:
 
 */
 function allEqual(str) {
-	if (str.length === 0) {
-		return false;
+	let strResult = true;
+
+	if(str === "") {
+		strResult = true;
+	}
+// Checks whether the string is an empty string or not
+	if (str.length === 0 && str !== "") {
+		strResult = false;
 	}
 
 	const char = str[0];
 
 	for (let i = 1; i < str.length; i++) {
 		if (str[i] !== char) {
-			return false;
+			strResult = false;
 		}
 	}
 
-	return true;
+	return strResult;
 }
 
 console.log(allEqual("aaa"));
@@ -388,8 +394,16 @@ Examples:
 - If you pass "246" it should return 12
 
 */
+function sumLetters (str) {
+	let sum = 0;
+	for (let i = 0; i < str.length; i++) {
+		sum += parseInt(str[i], 10);
+	}
+	return sum;
+}
 
-
+console.log(sumLetters("45"));
+console.log(sumLetters("246"));
 
 /*
 
@@ -403,7 +417,21 @@ Example:
 - If you pass "you" it should return 2
 
 */
-
+function countVowels(str) {
+	const vowels = ['a', 'e', 'i', 'o', 'u'];
+	let count = 0;
+  
+	for (let i = 0; i < str.length; i++) {
+	  const lowercaseChar = str[i].toLowerCase();
+	  if (vowels.includes(lowercaseChar) && lowercaseChar !== 'y') {
+		count++;
+	  }
+	}
+  
+	return count;
+  }
+  
+  console.log(countVowels("you"));  // Output: 2
 
 
 /*
@@ -420,8 +448,14 @@ Example:
 NOTE: do not use the builtin `split` method
 
 */
-
-
+function split (str) {
+	const letters = [];
+	for (let i = 0; i < str.length; i++) {
+		letters.push(str[i]);
+	}
+	return letters;
+}
+console.log(split("you")); 
 
 /*
 
@@ -437,8 +471,19 @@ Examples:
 
 */
 
-
-
+function letterMap(str) {
+	const map = {};
+	for (let i = 0; i < str.length; i++) {
+	  const letter = str[i];
+	  if (letter !== 'y') {
+		map[letter] = i;
+	  }
+	}
+	return map;
+  }
+  
+  console.log(letterMap("Yo"));     
+  console.log(letterMap("Hello"));  
 /*
 
 ----------------------------------------
@@ -452,8 +497,20 @@ Examples:
 - If you pass "Hello" it should return {"H": 1, "e": 1, "l": 2, "o": 1}
 
 */
-
-
+function letterCount(str) {
+	const count = {};
+	for (const letter of str) {
+	  if (count[letter]) {
+		count[letter]++;
+	  } else {
+		count[letter] = 1;
+	  }
+	}
+	return count;
+  }
+  
+  console.log(letterCount("Yo"));     
+  console.log(letterCount("Hello"));  
 
 /*
 
