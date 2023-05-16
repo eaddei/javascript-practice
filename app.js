@@ -363,9 +363,10 @@ function allEqual(str) {
 		strResult = true;
 	}
 // Checks whether the string is an empty string or not
-	if (str.length === 0 && str !== "") {
-		strResult = false;
-	}
+	// if (str.length === 0 && str !== "") {
+	// 	strResult = false;
+	// }
+	if (!str || str !== ""); // alternative way of checking the conditions
 
 	const char = str[0];
 
