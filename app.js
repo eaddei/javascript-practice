@@ -356,8 +356,24 @@ Examples:
 - If you pass "aba" it should return false
 
 */
+function allEqual(str) {
+	if (str.length === 0) {
+		return false;
+	}
 
+	const char = str[0];
 
+	for (let i = 1; i < str.length; i++) {
+		if (str[i] !== char) {
+			return false;
+		}
+	}
+
+	return true;
+}
+
+console.log(allEqual("aaa"));
+console.log(allEqual("aba"));
 
 /*
 
